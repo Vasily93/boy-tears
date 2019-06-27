@@ -1,0 +1,29 @@
+{
+  "name": "boy-tears",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon index.js",
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasily93/boy-tears.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasily93/boy-tears/issues"
+  },
+  "homepage": "https://github.com/Vasily93/boy-tears#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
