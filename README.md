@@ -22,3 +22,22 @@ Postman-Token: b6063dcb-627a-4ac7-80e3-a4e270469a0c
 Host: localhost:7890
 accept-encoding: gzip, deflate
 Connection: keep-alive
+
+GET /red HTTP/1.1
+User-Agent: PostmanRuntime/7.15.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 69fb125f-dbc4-47ba-bf51-377380bd6882
+Host: localhost:7890
+accept-encoding: gzip, deflate
+Connection: keep-alive
+
+POST / HTTP/1.1
+User-Agent: PostmanRuntime/7.15.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 373db71d-2963-4adc-8064-b3230a89aa0b
+Host: localhost:7890
+accept-encoding: gzip, deflate
+content-length: 0
+Connection: keep-alive
