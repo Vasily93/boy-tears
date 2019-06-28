@@ -35,6 +35,14 @@ describe('server routes', () => {
       expect(parsed.path).toEqual('/red');
       
     });
+
+    it('checks method', () => {
+      const redPacket = 'GET /red HTTP/1.1';
+    
+      const parsed = parseRequest(redPacket);
+      expect(parsed.method).toEqual('GET');
+    });
   });
+
 
 });
