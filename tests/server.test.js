@@ -1,5 +1,6 @@
-// const server = require('../lib/server');
+const server = require('../lib/server');
 const parseRequest = require('../lib/parse-request');
+const request = require('supertest');
 
 describe('server routes', () => {
   describe('parse request', () => {
@@ -44,5 +45,16 @@ describe('server routes', () => {
     });
   });
 
+  describe('testing our response', () => {
+    it('we send a response', done => {
+      return request(server)
+        .get('/')
+        .then(res => {
+          expect(res.text).toEqual(expect.any(String));
+          done();
+        });
+          
+    });
+  });
 
 });
