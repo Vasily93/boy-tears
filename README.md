@@ -41,3 +41,12 @@ Host: localhost:7890
 accept-encoding: gzip, deflate
 content-length: 0
 Connection: keep-alive
+
+'GET / HTTP/1.1',
+      '    User-Agent: PostmanRuntime/7.13.0',
+      '    Accept: */*',
+      '    Cache-Control: no-cache',
+      '    Postman-Token: b6063dcb-627a-4ac7-80e3-a4e270469a0c',
+      '    Host: localhost:7890',
+      '    accept-encoding: gzip, deflate',
+      '    Connection: keep-alive'
