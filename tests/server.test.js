@@ -55,6 +55,43 @@ describe('server routes', () => {
         });
           
     });
-  });
 
+    it('we send a response', done => {
+      return request(server)
+        .get('/')
+        .then(res => {
+          expect(res.text).toEqual(expect.stringContaining('hi'));
+          done();
+        });    
+    });
+    it('we send a sorry 400 response', done => {
+      return request(server)
+        .post('/')
+        .then(res => {
+          expect(res.text).toEqual(expect.stringContaining('SORRY MY FRIENDO'));
+          done();
+        });    
+    });
+    it('we send a response red', () => {
+      return request(server)
+        .get('/red')
+        .then(res => {
+          expect(res.text).toEqual(expect.stringContaining('red'));
+        });    
+    });
+    it('we send a response green', () => {
+      return request(server)
+        .get('/green')
+        .then(res => {
+          expect(res.text).toEqual(expect.stringContaining('green'));
+        });    
+    });
+    it('we send a response blue', () => {
+      return request(server)
+        .get('/blue')
+        .then(res => {
+          expect(res.text).toEqual(expect.stringContaining('blue'));
+        });    
+    });
+  });
 });
